@@ -16,28 +16,34 @@
         <div class="container header--aligment">
         <nav class="header__navigation header--aligment">
         <a href="index.html" class="logo"><span class="logo__web--color">Web</span>Studio</a>
-        <ul class="header__menu header--aligment">
-            <li class="header__item"><a href="index.html" class="header__link header__link--current">Студия
-            </a></li>
-            <li class="header__item"><a href="portfolio.html" class="header__link">Портфолио
-            </a></li>
-            <li class="header__item"><a href="#" class="header__link">Контакты
-            </a>
-            </li>
-        </ul>
-    </nav>
+<div class="navigation-hide">
+            <ul class="header__menu header--aligment">
+                <li class="header__item"><a href="index.html" class="header__link header__link--current">Студия
+                    </a></li>
+                <li class="header__item"><a href="portfolio.html" class="header__link">Портфолио
+                    </a></li>
+                <li class="header__item"><a href="#" class="header__link">Контакты
+                    </a>
+                </li>
+            </ul>
+            </nav>
+</div>
+<div class="navigation-hide">
+                <ul class="address">
+                    <li class="address__item">
+                        <a href="mailto:info@devstudio.com" class="address__link">
+                            <svg class="address__svg">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>info@devstudio.com</a>
+                    </li>
+                    <li class="address__item"><a href="tel:+380961111111" class="address__link">
+                            <svg class="address__svg">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>+38 096 111 11 11</a></li>
+                </ul>
+</div>
 
-    <ul class="address">
-        <li class="address__item">
-            <a href="mailto:info@devstudio.com" class="address__link">
-                <svg class="address__svg">
-                <use href="./images/icons.svg#icon-envelope"></use>
-            </svg>info@devstudio.com</a></li>
-        <li class="address__item"><a href="tel:+380961111111" class="address__link">
-            <svg class="address__svg">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>+38 096 111 11 11</a></li>
-    </ul>
+
 </div> 
 
 
@@ -105,7 +111,7 @@
                 <div class="container">
                 <h2 class="work__title">Чем мы занимаемся</h2>
                 <ul class="work__table">
-                    <li class="work__item"><img src="./images/img1.jpg" alt="разработка сайтов" width="370" height="294" class="images">
+                    <li class="work__item"><img src="./images/img1.jpg" alt="разработка сайтов" max-width="370" height="294" class="images">
                     <p class="work__text">Десктопные приложения</p></li>
                     <li class="work__item"><img src="./images/img2.jpg" alt="адаптация под мобильные" width="370" height="294" class="images">
                     <p class="work__text">Мобильные приложения</p></li>
@@ -286,7 +292,7 @@
     <!-- footer -->
     <footer class="footer">
     <div class="container footer__container">
-    <div>
+    <div class="footer__adress">
     <a href="index.html" class="logo logo__footer--color"><span class="logo__web--color">Web</span>Studio
     </a>
     

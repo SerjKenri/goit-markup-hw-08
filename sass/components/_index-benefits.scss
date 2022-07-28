@@ -7,17 +7,22 @@
     font-size: 0;
 }
 
-.benefits__table {
-    display: flex;
-}
+// .benefits__table {
+//     display: flex;
+// }
 
 .benef__item {
     min-width: 270px;
-    &+& {
-            margin-left: 30px;
+    // &+& {
+    //         margin-left: 30px;
+    //     }
+    
+        &:not(:last-child) {
+            margin-bottom: 30px;
         }
-
+        
 }
+
 
 
 .benefits__parahraph {
@@ -27,6 +32,10 @@
     text-transform: uppercase;
 
     margin-bottom: 10px;
+
+    
+    text-align: center;
+    
 }
 
 .benefits__text {
