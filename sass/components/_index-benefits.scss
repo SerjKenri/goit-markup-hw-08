@@ -1,0 +1,45 @@
+.benefits {
+    padding-bottom: 0;
+}
+
+.benefits__titile {
+    visibility: hidden;
+    font-size: 0;
+}
+
+.benefits__table {
+    display: flex;
+}
+
+.benef__item {
+    min-width: 270px;
+    &+& {
+            margin-left: 30px;
+        }
+
+}
+
+
+.benefits__parahraph {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.benefits__text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--last-text-color);
+}
+
+.benefits__svg {
+    @include flex-align-item;
+
+    margin-bottom: 30px;
+    height: 120px;
+    background-color: var(--background-team-sec);
+
+}

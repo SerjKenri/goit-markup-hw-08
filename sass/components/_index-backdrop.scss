@@ -1,0 +1,72 @@
+.backdrop {
+    position: fixed;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.backdrop.is-hidden .backdrop__modal {
+    transform: translate(-50%, -35%) scale(0.9);
+}
+
+.backdrop__modal {
+    position: absolute;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    top: 45%;
+    left: 50%;
+
+    min-width: 528px;
+    min-height: 581px;
+
+    background-color: var(--title-text-color);
+
+    transform: translate(-50%, -35%) scale(1);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop__button {
+    display: block;
+    position: absolute;
+
+    left: 490px;
+    top: 8px;
+
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+
+    padding: 0;
+
+    border-radius: 50%;
+    background: var(--title-text-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgb(0, 0, 0);
+
+    &:focus .backdrop__close,
+    &:hover .backdrop__close {
+        fill: var(--hover-color);
+    }
+}
+
+.backdrop__close {
+    fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
