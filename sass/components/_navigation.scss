@@ -5,13 +5,23 @@
 
 .header {
     border-bottom: 1px solid #ECECEC;
+    position: relative;
 }
 
-// .header--aligment {
-//     @include flex-align-item;
+.header__navigation {
 
-//     padding: 0;
-// }
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header--aligment {
+    
+
+
+
+}
 
 .header__link {
     position: relative;

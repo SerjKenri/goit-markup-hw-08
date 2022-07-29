@@ -1,0 +1,133 @@
+.mobile_menu_button {
+    display: inline-flex;
+    border: none;
+
+    margin: 0;
+    padding: 0;
+
+    border-color: transparent;
+
+}
+
+.mobile__close {
+    display: inline-flex;
+    border: none;
+        
+    margin: 0;
+    padding: 0;
+        
+    border-color: transparent;
+
+    left: 90%;
+
+
+    position: absolute;
+}
+
+
+
+.mobile-content-menu {
+
+    position: fixed;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    
+    padding: 48px 0px 48px 40px;
+    text-align: start;
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    
+    color: var(--first-text-color);
+
+    &.hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+    
+    &.hidden .mobile__model {
+        transform: translate(-50%, -35%) scale(0.9);
+    }
+}
+
+.mobile__model {
+    position: absolute;
+        
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+        
+    top: 45%;
+    left: 50%;
+        
+    width: 100%;
+    height: 100%;
+        
+    background-color: var(--title-text-color);
+        
+    transform: translate(-50%, -35%) scale(1);
+        
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// menu text
+
+.mobile__item {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+
+}
+
+.mobile__link {
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    
+    color: var(--first-text-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+        color: var(--focus-text-color);
+    }
+
+    &.selected {
+        color: var(--focus-text-color);
+    }
+}
+
+.mobile__address {
+    margin-top: 302px;
+}
+
+.mobile__phone {
+    text-decoration: none;
+    font-size: 34px;
+    line-height: 1.18;
+
+    letter-spacing: 0.02em;
+    
+    color: var(--focus-text-color);
+}
+
+.mobile__mail {
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    
+    color: #757575;
+}
