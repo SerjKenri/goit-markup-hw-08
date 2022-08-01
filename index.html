@@ -13,19 +13,20 @@
 <body>
     <header class="header">
         <!--Nagigation-->
-        <div class="container header--aligment">
+        <div class="container navigation">
         <nav class="header__navigation">
         <a href="index.html" class="logo logo__header"><span class="logo__web--color">Web</span>Studio</a>
-        <button type="button" class="mobile_menu_button is-open" aria-expanded="false" aria-controls="mobile-content-menu" data-mobile-open>
-            <svg width="40px" height="40px" aria-label="переключатель мобильного меню">
+        <div class="header__mobile-button--container"><button type="button" class="mobile_menu_button is-open" aria-expanded="false" aria-controls="mobile-content-menu"
+            data-mobile-open>
+            <svg width="40px" height="40px" aria-label="переключатель мобильного меню" class="mobile__button--color">
                 <use class="mobile-menu-close" href="./images/icons.svg#mobile-menu-open"></use>
             </svg>
-        </button>
+        </button></div>
         <!-- mobile menu -->
-        <div class="mobile-content-menu hide" id="mobile-content-menu" data-mobile>
+        <div class="mobile-content-menu hidden" id="mobile-content-menu" data-mobile>
             <div class="mobile__model">
                 <button type="button" class="mobile__close" data-mobile-close>
-                    <svg width="40px" height="40px">
+                    <svg width="40px" height="40px" class="mobile__button--color">
                         <use class="mobile-menu-open" href="./images/icons.svg#mobile-menu-close"></use>
                     </svg>
                 </button>
@@ -46,11 +47,11 @@
                             info@devstudio.com</a>
                     </li>
                 </ul>
-                <ul>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">LinkedIn</a></li>
+                <ul class="mobile__social">
+                    <li class="mobile__social-item"><a href="#" class="mobile__social--link">Instagram</a></li>
+                    <li class="mobile__social-item"><a href="#" class="mobile__social--link">Twitter</a></li>
+                    <li class="mobile__social-item"><a href="#" class="mobile__social--link">Facebook</a></li>
+                    <li class="mobile__social-item"><a href="#" class="mobile__social--link">LinkedIn</a></li>
                 </ul>
             </div>
         </div>
@@ -451,6 +452,6 @@
 
     <script src="./js/mobile-menu.js"></script>
 
-    <script src="./js/menu.js"></script>
+    <!-- <script src="./js/menu.js"></script> -->
 </body>
 </html>

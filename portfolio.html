@@ -13,35 +13,79 @@
 <body>
     <header class="header">
         <!--Nagigation-->
-        <div class="container header--aligment">
-            <nav class="header__navigation header--aligment">
-                <a href="index.html" class="logo"><span class="logo__web--color">Web</span>Studio</a>
-                <ul class="header__menu header--aligment">
-                    <li class="header__item"><a href="index.html" class="header__link">Студия
-                        </a></li>
-                    <li class="header__item"><a href="portfolio.html" class="header__link header__link--current">Портфолио
-                        </a></li>
-                    <li class="header__item"><a href="#" class="header__link">Контакты
-                        </a>
-                    </li>
-                </ul>
+        <div class="container navigation">
+            <nav class="header__navigation">
+                <a href="index.html" class="logo logo__header"><span class="logo__web--color">Web</span>Studio</a>
+                <div class="header__mobile-button--container"><button type="button" class="mobile_menu_button is-open"
+                        aria-expanded="false" aria-controls="mobile-content-menu" data-mobile-open>
+                        <svg width="40px" height="40px" aria-label="переключатель мобильного меню"
+                            class="mobile__button--color">
+                            <use class="mobile-menu-close" href="./images/icons.svg#mobile-menu-open"></use>
+                        </svg>
+                    </button></div>
+                <!-- mobile menu -->
+                <div class="mobile-content-menu hidden" id="mobile-content-menu" data-mobile>
+                    <div class="mobile__model">
+                        <button type="button" class="mobile__close" data-mobile-close>
+                            <svg width="40px" height="40px" class="mobile__button--color">
+                                <use class="mobile-menu-open" href="./images/icons.svg#mobile-menu-close"></use>
+                            </svg>
+                        </button>
+                        <ul class="mobile">
+                            <li class="mobile__item"><a href="index.html" class="mobile__link">Студия
+                                </a></li>
+                            <li class="mobile__item"><a href="portfolio.html" class="mobile__link selected">Портфолио
+                                </a></li>
+                            <li class="mobile__item"><a href="#" class="mobile__link">Контакты
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="mobile__address">
+                            <li class="mobile__list"><a href="tel:+380961111111" class="mobile__phone">
+                                    +38 096 111 11 11</a>
+                            </li>
+                            <li class="mobile__list"><a href="mailto:info@devstudio.com" class="mobile__mail">
+                                    info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="mobile__social">
+                            <li class="mobile__social-item"><a href="#" class="mobile__social--link">Instagram</a></li>
+                            <li class="mobile__social-item"><a href="#" class="mobile__social--link">Twitter</a></li>
+                            <li class="mobile__social-item"><a href="#" class="mobile__social--link">Facebook</a></li>
+                            <li class="mobile__social-item"><a href="#" class="mobile__social--link">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- desktop menu -->
+                <div class="navigation-hide">
+    
+                    <ul class="header__menu header--aligment">
+                        <li class="header__item"><a href="index.html" class="header__link">Студия
+                            </a></li>
+                        <li class="header__item"><a href="portfolio.html" class="header__link header__link--current">Портфолио
+                            </a></li>
+                        <li class="header__item"><a href="#" class="header__link">Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-    
-            <ul class="address">
-                <li class="address__item">
-                    <a href="mailto:info@devstudio.com" class="address__link">
-                        <svg class="address__svg">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>info@devstudio.com</a>
-                </li>
-                <li class="address__item"><a href="tel:+380961111111" class="address__link">
-                        <svg class="address__svg">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>+38 096 111 11 11</a></li>
-            </ul>
+            <!-- desktop address -->
+            <div class="navigation-hide">
+                <ul class="address">
+                    <li class="address__item">
+                        <a href="mailto:info@devstudio.com" class="address__link">
+                            <svg class="address__svg">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>info@devstudio.com</a>
+                    </li>
+                    <li class="address__item"><a href="tel:+380961111111" class="address__link">
+                            <svg class="address__svg">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>+38 096 111 11 11</a></li>
+                </ul>
+            </div>
         </div>
-    
-    
     </header>
     <main>
 <!-- Hero title -->
@@ -63,7 +107,7 @@
                     <div class="thubm__container">
                         <p class="thubm__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p>
                     </div>
-                    <img src="./images/img11.jpg" alt="Компьютер" width="370" height="294" class="images"></div>
+                    <img src="./images/img11.jpg" alt="Компьютер" width="450" height="294" class="images"></div>
                 <div class="portfolio__block">
                 <h2 class="portfolio__company">Технокряк</h2>
                 <p class="portfolio__type">Веб-сайт</p>
@@ -76,7 +120,7 @@
                     <div class="thubm__container">
                         <p class="thubm__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p>
                     </div>
-                    <img src="./images/img22.jpg" alt="Игроки в баскетболл" width="370" height="294" class="images"></div>
+                    <img src="./images/img22.jpg" alt="Игроки в баскетболл" width="450" height="294" class="images"></div>
                 <div class="portfolio__block">
                 <h2 class="portfolio__company">Постер New Orlean vs Golden Star</h2>
                 <p class="portfolio__type">Дизайн</p>
@@ -89,7 +133,7 @@
                     <div class="thubm__container">
                         <p class="thubm__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p>
                     </div>
-                    <img src="./images/img33.jpg" alt="Эмблема ресторана рыба" width="370" height="294" class="images"></div>
+                    <img src="./images/img33.jpg" alt="Эмблема ресторана рыба" width="450" height="294" class="images"></div>
                 <div class="portfolio__block">
                 <h2 class="portfolio__company">Ресторан Seafood</h2>
                 <p class="portfolio__type">Приложение</p>
@@ -103,7 +147,7 @@
                     <div class="thubm__container">
                         <p class="thubm__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p>
                     </div>
-                    <img src="./images/img44.jpg" alt="Наушники" width="370" height="294" class="images"></div>
+                    <img src="./images/img44.jpg" alt="Наушники" width="450" height="294" class="images"></div>
                 <div class="portfolio__block">
                 <h2 class="portfolio__company">Проект Prime</h2>
                 <p class="portfolio__type">Маркетинг</p>
@@ -116,7 +160,7 @@
                     <div class="thubm__container">
                         <p class="thubm__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p>
                     </div>
-                    <img src="./images/img5.jpg" alt="две коробки" width="370" height="294" class="images"></div>
+                    <img src="./images/img5.jpg" alt="две коробки" width="450" height="294" class="images"></div>
                 <div class="portfolio__block">
                 <h2 class="portfolio__company">Проект Boxes</h2>
                 <p class="portfolio__type">Приложение</p>
@@ -129,7 +173,7 @@
                     <div class="thubm__container">
                         <p class="thubm__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p>
                     </div>
-                    <img src="./images/img6.jpg" alt="Моноблок" width="370" height="294" class="images"></div>
+                    <img src="./images/img6.jpg" alt="Моноблок" width="450" height="294" class="images"></div>
                 <div class="portfolio__block">
                 <h2 class="portfolio__company">Inspiration has no Borders</h2>
                 <p class="portfolio__type">Веб-сайт</p>
@@ -142,7 +186,7 @@
                     <div class="thubm__container">
                         <p class="thubm__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p>
                     </div>
-                    <img src="./images/img7.jpg" alt="Журнал" width="370" height="294" class="images"></div>
+                    <img src="./images/img7.jpg" alt="Журнал" width="450" height="294" class="images"></div>
                 <div class="portfolio__block">
                 <h2 class="portfolio__company">Издание Limited Edition</h2>
                 <p class="portfolio__type">Дизайн</p>
@@ -155,7 +199,7 @@
                     <div class="thubm__container">
                         <p class="thubm__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p>
                     </div>
-                    <img src="./images/img8.jpg" alt="Бирка" width="370" height="294" class="images"></div>
+                    <img src="./images/img8.jpg" alt="Бирка" width="450" height="294" class="images"></div>
                 <div class="portfolio__block">
                 <h2 class="portfolio__company">Проект LAB</h2>
                 <p class="portfolio__type">Маркетинг</p>
@@ -168,7 +212,7 @@
                     <div class="thubm__container">
                         <p class="thubm__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p>
                     </div>
-                    <img src="./images/img9.jpg" alt="Печатает на ноутбуке" width="370" height="294" class="images"></div>
+                    <img src="./images/img9.jpg" alt="Печатает на ноутбуке" width="450" height="294" class="images"></div>
                 <div class="portfolio__block">
                 <h2 class="portfolio__company">Growing Business</h2>
                 <p class="portfolio__type">Приложение</p>
@@ -185,7 +229,7 @@
     <!-- footer -->
     <footer class="footer">
         <div class="container footer__container">
-            <div>
+            <div class="footer__adress">
                 <a href="index.html" class="logo logo__footer--color"><span class="logo__web--color">Web</span>Studio
                 </a>
     
@@ -238,14 +282,18 @@
                     <input class="footer__input" id="email" placeholder="E-mail" name="email">
                     <label class="footer__label" for="email">Подпишитесь на рассылку</label>
                 </form>
-                <button class="footer__submit" type="submit">Подписаться
-                    <svg class="footer__send" width="24" height="24">
-                        <use href="./images/icons.svg#icon-send"></use>
-                    </svg>
-                </button>
+                <div class="footer__submit--container">
+                    <button class="footer__submit" type="submit">Подписаться
+                        <svg class="footer__send" width="1.5rem" height="1.5rem">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
