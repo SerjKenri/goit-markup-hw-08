@@ -853,8 +853,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
-  padding-top: 40px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .form {
