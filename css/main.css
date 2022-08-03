@@ -388,11 +388,12 @@ body {
 
 .mobile_menu_button {
   display: flex;
-  border: none;
   margin: 0 auto;
   padding: 0;
   border-color: transparent;
+  background-color: transparent;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 99;
 }
 .mobile_menu_button:focus, .mobile_menu_button:hover {
   color: #2196F3;
@@ -401,6 +402,7 @@ body {
 .mobile__close {
   display: inline-flex;
   border: none;
+  background-color: transparent;
   margin: 0;
   padding: 0;
   border-color: transparent;
@@ -995,6 +997,7 @@ body {
 }
 
 .callback__button {
+  margin: 0 auto;
   width: 200px;
   height: 50px;
   border: none;

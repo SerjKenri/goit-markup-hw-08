@@ -21,7 +21,8 @@
             <svg width="40px" height="40px" aria-label="переключатель мобильного меню" class="mobile__button--color">
                 <use class="mobile-menu-close" href="./images/icons.svg#mobile-menu-open"></use>
             </svg>
-        </button></div>
+        </button>
+        </div>
         <!-- mobile menu -->
         <div class="mobile-content-menu hidden" id="mobile-content-menu" data-mobile>
             <div class="mobile__model">
@@ -150,11 +151,20 @@
                 <div class="container">
                 <h2 class="work__title">Чем мы занимаемся</h2>
                 <ul class="work__table">
-                    <li class="work__item"><img src="./images/img1.jpg" alt="разработка сайтов" width="370" height="294" class="images">
+                    <li class="work__item"><img
+                        srcset="./images/img1.jpg 1x, ./images/img1@2.jpg 2x"
+                        src="./images/img1.jpg"
+                        alt="разработка сайтов" width="370" height="294" class="images">
                     <p class="work__text">Десктопные приложения</p></li>
-                    <li class="work__item"><img src="./images/img2.jpg" alt="адаптация под мобильные" width="370" height="294" class="images">
+                    <li class="work__item"><img
+                        srcset="./images/img2.jpg 1x, ./images/img2@2.jpg 2x"
+                        src="./images/img2.jpg" 
+                        alt="адаптация под мобильные" width="370" height="294" class="images">
                     <p class="work__text">Мобильные приложения</p></li>
-                    <li class="work__item"><img src="./images/img3.jpg" alt="дизайн и оформление" width="370" height="294" class="images">
+                    <li class="work__item"><img
+                        srcset="./images/img3.jpg 1x, ./images.img3@2.jpg 2x"
+                        src="./images/img3.jpg" 
+                        alt="дизайн и оформление" width="370" height="294" class="images">
                     <p class="work__text">Дизайнерские решения</p></li>
                 </ul>
                 </div>
@@ -164,7 +174,10 @@
     <div class="container">
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__table">
-            <li class="team__item"><img src="./images/photo1.jpg" alt="мужчина" width="270" height="260" class="images">
+            <li class="team__item"><img 
+                srcset="./images/photo1.jpg 1x, ./images/photo1@2.jpg 2x"
+                src="./images/photo1.jpg" 
+                alt="мужчина" width="270" height="260" class="images">
                 <h3 class="team__names">Игорь Демьяненко</h3>
                 <p lang="en" class="team__job">Product Designer</p>
                 <ul class="team__social">
@@ -194,7 +207,10 @@
                     </a></li>
                 </ul>
             </li>
-            <li class="team__item"><img src="./images/photo2.jpg" alt="женщина" width="270" height="260" class="images">
+            <li class="team__item"><img 
+                srcset="./images/photo2.jpg 1x, ./images/photo2@2.jpg 2x"
+                src="./images/photo2.jpg" 
+                alt="женщина" width="270" height="260" class="images">
                 <h3 class="team__names">Ольга Репина</h3>
                 <p lang="en" class="team__job">Frontend Developer</p>
             <ul class="team__social">
@@ -220,7 +236,10 @@
                     </a></li>
             </ul>
             </li>
-            <li class="team__item"><img src="./images/photo3.jpg" alt="мужчина" width="270" height="260" class="images">
+            <li class="team__item"><img 
+                srcset="./images/photo3.jpg 1x, ./images/photo3@2.jpg 2x"
+                src="./images/photo3.jpg" 
+                alt="мужчина" width="270" height="260" class="images">
                 <h3 class="team__names">Николай Тарасов</h3>
                 <p lang="en" class="team__job">Marketing</p>
             <ul class="team__social">
@@ -246,7 +265,10 @@
                     </a></li>
             </ul>
             </li>
-            <li class="team__item"><img src="./images/photo4.jpg" alt="женщина" width="270" height="260" class="images">
+            <li class="team__item"><img
+                srcset="./images/photo4.jpg 1x, ./images/photo4@2.jpg"
+                src="./images/photo4.jpg" 
+                alt="муючина" width="270" height="260" class="images">
                 <h3 class="team__names">Михаил Ермаков</h3>
                 <p lang="en" class="team__job">UI Designer</p>
             <ul class="team__social">
@@ -272,6 +294,7 @@
                     </a></li>
             </ul>
             </li>
+            
                     
                     </ul>
     </div>
