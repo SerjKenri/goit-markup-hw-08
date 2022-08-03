@@ -15,11 +15,12 @@ ul {
     margin: 0;
 }
 
-.images {
+img {
     display: block;
     width: 100%;
     height: auto;
 }
+
 
 .container {
     padding-left: 15px;
@@ -33,17 +34,20 @@ ul {
     @media  screen and (min-width: 768px) {
         width: 768px;
     }
-    @media screen and (min-width: 1170px) {
-        width: 1170px;
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
     }
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-    @media screen and (max-width: 768px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
 }

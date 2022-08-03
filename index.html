@@ -16,7 +16,7 @@
         <div class="container navigation">
         <nav class="header__navigation">
         <a href="index.html" class="logo logo__header"><span class="logo__web--color">Web</span>Studio</a>
-        <div class="header__mobile-button--container"><button type="button" class="mobile_menu_button is-open" aria-expanded="false" aria-controls="mobile-content-menu"
+        <div class="header__mobile-button--container"> <button type="button" class="mobile_menu_button is-open" aria-expanded="false" aria-controls="mobile-content-menu"
             data-mobile-open>
             <svg width="40px" height="40px" aria-label="переключатель мобильного меню" class="mobile__button--color">
                 <use class="mobile-menu-close" href="./images/icons.svg#mobile-menu-open"></use>
@@ -151,21 +151,21 @@
                 <div class="container">
                 <h2 class="work__title">Чем мы занимаемся</h2>
                 <ul class="work__table">
-                    <li class="work__item"><img
-                        srcset="./images/img1.jpg 1x, ./images/img1@2.jpg 2x"
-                        src="./images/img1.jpg"
-                        alt="разработка сайтов" width="370" height="294" class="images">
+                    <li class="work__item">
+                    <img srcset="./images/main-about-us-1.jpeg 1x, ./images/main-about-us-1-@2.jpeg 2x" src="./images/main-about-us-1.jpeg"
+                    alt="Разработка десктопных приложений" width="370" height="294" />
                     <p class="work__text">Десктопные приложения</p></li>
-                    <li class="work__item"><img
-                        srcset="./images/img2.jpg 1x, ./images/img2@2.jpg 2x"
-                        src="./images/img2.jpg" 
-                        alt="адаптация под мобильные" width="370" height="294" class="images">
+
+                    <li class="work__item">
+                    <img srcset="./images/main-about-us-2.jpeg 1x, ./images/main-about-us-2-@2.jpeg 2x" src="./images/main-about-us-2.jpeg"
+                    alt="Разработка мобильных приложений" width="370" height="294" />
                     <p class="work__text">Мобильные приложения</p></li>
-                    <li class="work__item"><img
-                        srcset="./images/img3.jpg 1x, ./images.img3@2.jpg 2x"
-                        src="./images/img3.jpg" 
-                        alt="дизайн и оформление" width="370" height="294" class="images">
+
+                    <li class="work__item">
+                    <img srcset="./images/main-about-us-3.jpeg 1x, ./images/main-about-us-3-@2.jpeg 2x" src="./images/main-about-us-3.jpeg"
+                    alt="Разработка дизайнерских решений" width="370" height="294" />
                     <p class="work__text">Дизайнерские решения</p></li>
+
                 </ul>
                 </div>
         </section>
@@ -174,10 +174,26 @@
     <div class="container">
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__table">
-            <li class="team__item"><img 
-                srcset="./images/photo1.jpg 1x, ./images/photo1@2.jpg 2x"
-                src="./images/photo1.jpg" 
-                alt="мужчина" width="270" height="260" class="images">
+            <li class="team__item">
+                <div class="team__card"><picture>
+                    <source srcset="./images/designer-270.webp 1x, ./images/designer-540.webp 2x" media="(min-width: 1200px)"
+                        type="image/webp" />
+                    <source srcset="./images/designer-270.jpeg 1x, ./images/designer-540.jpeg 2x" media="(min-width: 1200px)"
+                        type="image/jpeg" />
+                
+                    <source srcset="./images/designer-354.webp 1x, ./images/designer-708.webp 2x"
+                        media="(min-width: 768px) and (max-width: 1199px)" type="image/webp" />
+                    <source srcset="./images/designer-354.jpeg 1x, ./images/designer-708.jpeg 2x"
+                        media="(min-width: 768px) and (max-width: 1199px)" type="image/jpeg" />
+                
+                    <source srcset="./images/designer-450.webp 1x, ./images/designer-900.webp 2x" media="(max-width: 767px)"
+                        type="image/webp" />
+                    <source srcset="./images/designer-450.jpeg 1x, ./images/designer-900.jpeg 2x" media="(max-width: 767px)"
+                        type="image/jpeg" />
+                
+                    <img srcset="./images/designer-450.jpeg 450w, ./images/designer-900.jpeg 900w" src="./images/designer-450.jpeg"
+                        alt="Игорь Демьяненко" />
+                </picture></div>
                 <h3 class="team__names">Игорь Демьяненко</h3>
                 <p lang="en" class="team__job">Product Designer</p>
                 <ul class="team__social">
@@ -207,10 +223,26 @@
                     </a></li>
                 </ul>
             </li>
-            <li class="team__item"><img 
-                srcset="./images/photo2.jpg 1x, ./images/photo2@2.jpg 2x"
-                src="./images/photo2.jpg" 
-                alt="женщина" width="270" height="260" class="images">
+            <li class="team__item">
+                <div class="team__card"><picture>
+                    <source srcset="./images/developer-270.webp 1x, ./images/developer-540.webp 2x" media="(min-width: 1200px)"
+                        type="image/webp" />
+                    <source srcset="./images/developer-270.jpeg 1x, ./images/developer-540.jpeg 2x" media="(min-width: 1200px)"
+                        type="image/jpeg" />
+                
+                    <source srcset="./images/developer-354.webp 1x, ./images/developer-708.webp 2x"
+                        media="(min-width: 768px) and (max-width: 1199px)" type="image/webp" />
+                    <source srcset="./images/developer-354.jpeg 1x, ./images/developer-708.jpeg 2x"
+                        media="(min-width: 768px) and (max-width: 1199px)" type="image/jpeg" />
+                
+                    <source srcset="./images/developer-450.webp 1x, ./images/developer-900.webp 2x" media="(max-width: 767px)"
+                        type="image/webp" />
+                    <source srcset="./images/developer-450.jpeg 1x, ./images/developer-900.jpeg 2x" media="(max-width: 767px)"
+                        type="image/jpeg" />
+                
+                    <img srcset="./images/developer-450.jpeg 450w, ./images/developer-900.jpeg 900w" src="./images/developer-450.jpeg"
+                        alt="Ольга Репина" />
+                </picture></div>
                 <h3 class="team__names">Ольга Репина</h3>
                 <p lang="en" class="team__job">Frontend Developer</p>
             <ul class="team__social">
@@ -236,10 +268,26 @@
                     </a></li>
             </ul>
             </li>
-            <li class="team__item"><img 
-                srcset="./images/photo3.jpg 1x, ./images/photo3@2.jpg 2x"
-                src="./images/photo3.jpg" 
-                alt="мужчина" width="270" height="260" class="images">
+            <li class="team__item">
+                <div class="team__card"><picture>
+                    <source srcset="./images/marketolog-270.webp 1x, ./images/marketolog-540.webp 2x" media="(min-width: 1200px)"
+                        type="image/webp" />
+                    <source srcset="./images/marketolog-270.jpeg 1x, ./images/marketolog-540.jpeg 2x" media="(min-width: 1200px)"
+                        type="image/jpeg" />
+                
+                    <source srcset="./images/marketolog-354.webp 1x, ./images/marketolog-708.webp 2x"
+                        media="(min-width: 768px) and (max-width: 1199px)" type="image/webp" />
+                    <source srcset="./images/marketolog-354.jpeg 1x, ./images/marketolog-708.jpeg 2x"
+                        media="(min-width: 768px) and (max-width: 1199px)" type="image/jpeg" />
+                
+                    <source srcset="./images/marketolog-450.webp 1x, ./images/marketolog-900.webp 2x" media="(max-width: 767px)"
+                        type="image/webp" />
+                    <source srcset="./images/marketolog-450.jpeg 1x, ./images/marketolog-900.jpeg 2x" media="(max-width: 767px)"
+                        type="image/jpeg" />
+                
+                    <img srcset="./images/marketolog-450.jpeg 450w, ./images/marketolog-900.jpeg 900w"
+                        src="./images/marketolog-450.jpeg" alt="Николай Тарасов" />
+                </picture></div>
                 <h3 class="team__names">Николай Тарасов</h3>
                 <p lang="en" class="team__job">Marketing</p>
             <ul class="team__social">
@@ -265,10 +313,26 @@
                     </a></li>
             </ul>
             </li>
-            <li class="team__item"><img
-                srcset="./images/photo4.jpg 1x, ./images/photo4@2.jpg"
-                src="./images/photo4.jpg" 
-                alt="муючина" width="270" height="260" class="images">
+            <li class="team__item">
+                <div class="team__card"><picture>
+                    <source srcset="./images/uidesigner-270.webp 1x, ./images/uidesigner-540.webp 2x" media="(min-width: 1200px)"
+                        type="image/webp" />
+                    <source srcset="./images/uidesigner-270.jpeg 1x, ./images/uidesigner-540.jpeg 2x" media="(min-width: 1200px)"
+                        type="image/jpeg" />
+                
+                    <source srcset="./images/uidesigner-354.webp 1x, ./images/uidesigner-708.webp 2x"
+                        media="(min-width: 768px) and (max-width: 1199px)" type="image/webp" />
+                    <source srcset="./images/uidesigner-354.jpeg 1x, ./images/uidesigner-708.jpeg 2x"
+                        media="(min-width: 768px) and (max-width: 1199px)" type="image/jpeg" />
+                
+                    <source srcset="./images/uidesigner-450.webp 1x, ./images/uidesigner-900.webp 2x" media="(max-width: 767px)"
+                        type="image/webp" />
+                    <source srcset="./images/uidesigner-450.jpeg 1x, ./images/uidesigner-900.jpeg 2x" media="(max-width: 767px)"
+                        type="image/jpeg" />
+                
+                    <img srcset="./images/uidesigner-450.jpeg 450w, ./images/uidesigner-900.jpeg 900w"
+                        src="./images/uidesigner-450.jpeg" alt="Михаил Ермаков" />
+                </picture></div>
                 <h3 class="team__names">Михаил Ермаков</h3>
                 <p lang="en" class="team__job">UI Designer</p>
             <ul class="team__social">
@@ -354,63 +418,69 @@
     <!-- footer -->
     <footer class="footer">
     <div class="container footer__container">
+        <div class="container__aligment">
     <div class="footer__adress">
     <a href="index.html" class="logo logo__footer--color"><span class="logo__web--color">Web</span>Studio
     </a>
-    
+
     <address>
         <ul class="footer__address">
             <li class="footer__item"><a href="#" class="footer__link">г. Киев, пр-т Леси Украинки, 26</a></li>
-            <li class="footer__item"><a href="mailto:info@devstudio.com" class="footer__link footer__link--color">info@example.com</a> </li>
-            <li class="footer__item"><a href="tel:+380961111111" class="footer__link footer__link--color">+38 096 111 11 11</a> </li>
+            <li class="footer__item"><a href="mailto:info@devstudio.com"
+                    class="footer__link footer__link--color">info@example.com</a> </li>
+            <li class="footer__item"><a href="tel:+380961111111" class="footer__link footer__link--color">+38 096 111 11
+                    11</a> </li>
         </ul>
     </address>
-    </div>
-    <div class="social">
-        <p class="social__title">присоединяйтесь</p>
-        <ul class="social__list">
-            <li class="social__item">
-                <a href="#" class="social__link">
-                    <svg width="1.25rem" height="1.25rem">
-                        <use href="./images/icons.svg#icon-instagram-2" class="social__svg"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="social__item">
-                <a href="#" class="social__link">
-                    <svg width="1.25rem" height="1.25rem">
-                        <use href="./images/icons.svg#icon-twitter-1" class="social__svg"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="social__item">
-                <a href="#" class="social__link">
-                    <svg width="1.25rem" height="1.25rem">
-                        <use href="./images/icons.svg#icon-facebook-1" class="social__svg"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="social__item">
-                <a href="#" class="social__link">
-                    <svg width="1.25rem" height="1.25rem">
-                        <use href="./images/icons.svg#icon-linkedin-1" class="social__svg"></use>
-                    </svg>
-                </a>
-            </li>
-                            
-        </ul>
-    </div>
-    <div class="footer__form">
-        <form>
-            <input class="footer__input" id="email"  placeholder="E-mail" name="email">
-            <label class="footer__label" for="email">Подпишитесь на рассылку</label>
-        </form>
+</div>
+<div class="social">
+    <p class="social__title">присоединяйтесь</p>
+    <ul class="social__list">
+        <li class="social__item">
+            <a href="#" class="social__link">
+                <svg width="1.25rem" height="1.25rem">
+                    <use href="./images/icons.svg#icon-instagram-2" class="social__svg"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="social__item">
+            <a href="#" class="social__link">
+                <svg width="1.25rem" height="1.25rem">
+                    <use href="./images/icons.svg#icon-twitter-1" class="social__svg"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="social__item">
+            <a href="#" class="social__link">
+                <svg width="1.25rem" height="1.25rem">
+                    <use href="./images/icons.svg#icon-facebook-1" class="social__svg"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="social__item">
+            <a href="#" class="social__link">
+                <svg width="1.25rem" height="1.25rem">
+                    <use href="./images/icons.svg#icon-linkedin-1" class="social__svg"></use>
+                </svg>
+            </a>
+        </li>
+
+    </ul>
+</div>
+        </div>
+<div class="footer__form">
+    <b class="footer__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
+
+    <form class="footer__form-container">
+        <input class="footer__input" id="email" placeholder="E-mail" name="email">
+        <label class="footer__label" for="email"></label>
+    </form>
     <div class="footer__submit--container">
-                <button class="footer__submit" type="submit">Подписаться
-                    <svg class="footer__send" width="1.5rem" height="1.5rem">
-                        <use href="./images/icons.svg#icon-send"></use>
-                    </svg>
-                </button>
+        <button class="footer__submit" type="submit">Подписаться
+            <svg class="footer__send" width="1.5rem" height="1.5rem">
+                <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+        </button>
     </div>
     </div>
     </div>
@@ -460,9 +530,10 @@
                         </label>
                     </div>
     
-                </form>
+ 
             </div>
             <button class="callback__button" type="submit">Отправить</button>
+            </form>
             <button class="backdrop__button" data-modal-close>
                 <svg width="30px" height="30px" class="backdrop__close">
                     <use href="./images/icons.svg#close"></use>

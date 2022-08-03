@@ -1,5 +1,7 @@
 .benefits {
-    padding-bottom: 0;
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 0;
+    }
 }
 
 .benefits__titile {
@@ -7,22 +9,43 @@
     font-size: 0;
 }
 
-// .benefits__table {
-//     display: flex;
-// }
-
-.benef__item {
-    min-width: 270px;
-    // &+& {
-    //         margin-left: 30px;
-    //     }
-    
-        &:not(:last-child) {
-            margin-bottom: 30px;
-        }
-        
+.benefits__table {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        margin-top: -30px;
+    }
 }
 
+.benef__item {
+@media screen and (max-width: 479px) {
+        width: 100%;
+    }
+
+    &+& {
+        @media screen and (max-width: 767px) {
+            margin-top: 30px;
+        }
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-basis: calc(100% / 2 - 30px);
+        margin-left: 30px;
+        margin-top: var(--gap-h);
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc(100% / 4 - 30px);
+        margin-left: 30px;
+        margin-top: var(--gap-h);
+}
+
+}
 
 
 .benefits__parahraph {
@@ -35,6 +58,10 @@
 
     
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
     
 }
 
@@ -42,6 +69,7 @@
     font-size: 14px;
     line-height: 1.7;
     color: var(--last-text-color);
+    text-align: left;
 }
 
 .benefits__svg {
