@@ -577,7 +577,7 @@ body {
   z-index: 99;
 }
 .mobile_menu_button:focus, .mobile_menu_button:hover {
-  color: #2196F3;
+  color: var(--hover-color);
 }
 @media (min-width: 768px) {
   .mobile_menu_button {
@@ -603,7 +603,7 @@ body {
   outline: none;
 }
 .mobile__close:focus, .mobile__close:hover {
-  color: #2196F3;
+  color: var(--hover-color);
 }
 
 .mobile__button--color {
