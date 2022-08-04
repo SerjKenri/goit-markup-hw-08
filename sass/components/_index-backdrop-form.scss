@@ -11,7 +11,20 @@
 }
 
 .form {
-    width: calc(100vw - 110px);
+    width: 370px;
+        
+    display: flex;
+        
+    flex-direction: column;
+    
+    @media (max-width: 479px) {
+        width: calc(100vw - 80px);
+    }
+    
+    @media (min-width: 1200px) {
+        width: 448px;
+    }
+    
 }
 
 .callback {

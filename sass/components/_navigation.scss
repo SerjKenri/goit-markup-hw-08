@@ -1,8 +1,19 @@
-.navigation-hide {
+.navigation {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-    display: none;
 }
 
+.navigation-hide {
+    align-items: flex-start;
+    justify-content: space-around;
+    @media (max-width: 767px) {
+        display: none;
+}
+}
 .header {
     border-bottom: 1px solid #ECECEC;
 }
@@ -14,14 +25,15 @@
     justify-content: space-between;
 }
 
-.header__mobile-button--container {
-
+.header--aligment {
+    display: flex;
 
 
 }
 
 .header__link {
     position: relative;
+    
 
     font-weight: 500;
     font-size: 14px;
@@ -81,18 +93,46 @@
 }
 
 .address {
-    @include flex-aling-text;
-    margin-left: auto;
-}
+    @media screen and (max-width: 767px) {
 
-.address__item {
-    &+& {
-        margin-left: 30px;
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: start;
+        height: 100%;
     }
 }
 
+.address__item {
+&+& {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            margin-top: 10px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 30px;
+            height: 100%;
+        }
+    }
+}
 
 .address__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -100,13 +140,19 @@
     color: var(--last-text-color);
     text-decoration: none;
 
-    @include flex-aling-text;
+
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     &:hover,
     &:focus {
         color: var(--focus-text-color);
+    }
+    @media  screen and (max-width: 1199px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
     }
 }
 
