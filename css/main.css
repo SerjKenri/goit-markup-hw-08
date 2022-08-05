@@ -1312,6 +1312,11 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+@media screen and (min-width: 1200px) {
+  .accept {
+    font-size: 14px;
+  }
+}
 
 .checkbox__link {
   -webkit-text-decoration-line: underline;
