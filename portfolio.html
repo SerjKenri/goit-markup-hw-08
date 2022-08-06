@@ -29,9 +29,9 @@
                 <div class="navigation-hide">
     
                     <ul class="header__menu header--aligment">
-                        <li class="header__item"><a href="index.html" class="header__link ">Студия
+                        <li class="header__item"><a href="index.html" class="header__link header__link--current">Студия
                             </a></li>
-                        <li class="header__item"><a href="portfolio.html" class="header__link header__link--current">Портфолио
+                        <li class="header__item"><a href="portfolio.html" class="header__link">Портфолио
                             </a></li>
                         <li class="header__item"><a href="#" class="header__link">Контакты
                             </a>
@@ -40,17 +40,17 @@
                 </div>
             </nav>
             <!-- desktop address -->
-            <div class="navigation-hide">
-                <ul class="address">
+            <div class="adress__container navigation-hide">
+                <ul class="address header--aligment">
                     <li class="address__item">
                         <a href="mailto:info@devstudio.com" class="address__link">
-                            <svg class="address__svg">
-                                <use href="./images/icons.svg#icon-envelope"></use>
+                            <svg class="address__svg" width="1rem" height="1rem">
+                                <use href="./images/icons.svg#icon-mail"></use>
                             </svg>info@devstudio.com</a>
                     </li>
                     <li class="address__item"><a href="tel:+380961111111" class="address__link">
-                            <svg class="address__svg">
-                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            <svg class="address__svg" width="10px" height="16px">
+                                <use href="./images/icons.svg#icon-smartphone2"></use>
                             </svg>+38 096 111 11 11</a></li>
                 </ul>
             </div>
@@ -76,11 +76,15 @@
                     <div class="thubm__container">
                         <p class="thubm__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p>
                     </div>
-                <img 
-                srcset="./images/portfolio-img-1-1.jpeg 1x, ./images/portfolio-img-1-1-@2.jpeg 2x" 
-                class="portfolio-img" 
-                src="./images/portfolio-img-1-1.jpeg" 
-                alt="Веб-сайт Технокряк" />
+                <picture class="project-link__card-img">
+                    <source srcset="./images/technokriak-450.jpg 1x,
+                                    ./images/technokriak-900.jpg 2x" media="(max-width: 767px)" />
+                    <source srcset="./images/technokriak-354.jpg 1x,
+                                    ./images/technokriak-708.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)" />
+                    <source srcset="./images/technokriak-370.jpg 1x,
+                                    ./images/technokriak-740.jpg 2x" media="(min-width: 1200px)" />
+                    <img src="./images/technokriak-370.jpg" alt="Ноутбук, на якому відкритий веб-сайт" />
+                </picture>
                 </div>
                 <div class="portfolio__block">
                 <h2 class="portfolio__company">Технокряк</h2>
@@ -94,10 +98,15 @@
                     <div class="thubm__container">
                         <p class="thubm__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p>
                     </div>
-                <img 
-                srcset="./images/portfolio-img-1-2.jpeg    1x,./images/portfolio-img-1-2-@2.jpeg 2x" 
-                class="portfolio-img" src="./images/portfolio-img-1-2.jpeg"
-                alt="Дизайн Постер Нью Орлеан против Голден Стар" />
+                <picture class="project-link__card-img">
+                    <source srcset="./images/neworleanvs-450.jpg 1x,
+                                    ./images/neworleanvs-900.jpg 2x" media="(max-width: 767px)" />
+                    <source srcset="./images/neworleanvs-354.jpg 1x,
+                                    ./images/neworleanvs-708.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)" />
+                    <source srcset="./images/neworleanvs-370.jpg 1x,
+                                    ./images/neworleanvs-740.jpg 2x" media="(min-width: 1200px)" />
+                    <img src="./images/neworleanvs-370.jpg" alt="Два баскетболіста" />
+                </picture>
                 </div>
                 <div class="portfolio__block">
                 <h2 class="portfolio__company">Постер New Orlean vs Golden Star</h2>
@@ -111,11 +120,15 @@
                     <div class="thubm__container">
                         <p class="thubm__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p>
                     </div>
-                <img 
-                srcset="./images/portfolio-img-1-3.jpeg    1x, ./images/portfolio-img-1-3-@2.jpeg 2x" 
-                class="portfolio-img" 
-                src="./images/portfolio-img-1-3.jpeg" 
-                alt="Приложение Ресторан Сифуд" />
+                <picture class="project-link__card-img">
+                    <source srcset="./images/seafood-450.jpg 1x,
+                                    ./images/seafood-900.jpg 2x" media="(max-width: 767px)" />
+                    <source srcset="./images/seafood-354.jpg 1x,
+                                    ./images/seafood-708.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)" />
+                    <source srcset="./images/seafood-370.jpg 1x,
+                                    ./images/seafood-740.jpg 2x" media="(min-width: 1200px)" />
+                    <img src="./images/seafood-370.jpg" alt="Ресторан" />
+                </picture>
                 </div>
                 <div class="portfolio__block">
                 <h2 class="portfolio__company">Ресторан Seafood</h2>
@@ -130,11 +143,15 @@
                     <div class="thubm__container">
                         <p class="thubm__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p>
                     </div>
-                <img 
-                srcset="./images/portfolio-img-2-1.jpeg    1x, ./images/portfolio-img-2-1-@2.jpeg 2x" 
-                class="portfolio-img" 
-                src="./images/portfolio-img-2-1.jpeg" 
-                alt="Маркетинг Проект Прайм" />
+                <picture class="project-link__card-img">
+                    <source srcset="./images/prime-450.jpg 1x,
+                                    ./images/prime-900.jpg 2x" media="(max-width: 767px)" />
+                    <source srcset="./images/prime-354.jpg 1x,
+                                    ./images/prime-708.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)" />
+                    <source srcset="./images/prime-370.jpg 1x,
+                                    ./images/prime-740.jpg 2x" media="(min-width: 1200px)" />
+                    <img src="./images/prime-370.jpg" alt="Бездротові накладні навушники" />
+                </picture>
                 </div>
                 <div class="portfolio__block">
                 <h2 class="portfolio__company">Проект Prime</h2>
@@ -148,11 +165,15 @@
                     <div class="thubm__container">
                         <p class="thubm__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p>
                     </div>
-                <img 
-                srcset="./images/portfolio-img-2-2.jpeg    1x, ./images/portfolio-img-2-2-@2.jpeg 2x" 
-                class="portfolio-img" 
-                src="./images/portfolio-img-2-2.jpeg" 
-                alt="Приложение Проект Боксз" />
+                <picture class="project-link__card-img">
+                    <source srcset="./images/boxes-450.jpg 1x,
+                                    ./images/boxes-900.jpg 2x" media="(max-width: 767px)" />
+                    <source srcset="./images/boxes-354.jpg 1x,
+                                    ./images/boxes-708.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)" />
+                    <source srcset="./images/boxes-370.jpg 1x,
+                                    ./images/boxes-740.jpg 2x" media="(min-width: 1200px)" />
+                    <img src="./images/boxes-370.jpg" alt="Дві коробки" />
+                </picture>
                 </div>
                 <div class="portfolio__block">
                 <h2 class="portfolio__company">Проект Boxes</h2>
@@ -166,11 +187,15 @@
                     <div class="thubm__container">
                         <p class="thubm__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p>
                     </div>
-                <img 
-                srcset="./images/portfolio-img-2-3.jpeg    1x, ./images/portfolio-img-2-3-@2.jpeg 2x" 
-                class="portfolio-img" 
-                src="./images/portfolio-img-2-3.jpeg"
-                alt="Веб-сайт Инспирейшн хэз ноу Бордерз" />
+                <picture class="project-link__card-img">
+                    <source srcset="./images/inspiration-450.jpg 1x,
+                                    ./images/inspiration-900.jpg 2x" media="(max-width: 767px)" />
+                    <source srcset="./images/inspiration-354.jpg 1x,
+                                    ./images/inspiration-708.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)" />
+                    <source srcset="./images/inspiration-370.jpg 1x,
+                                    ./images/inspiration-740.jpg 2x" media="(min-width: 1200px)" />
+                    <img src="./images/inspiration-370.jpg" alt="Монітор комп'ютера, на якому відкритий веб-сайт" />
+                </picture>
                 </div>
                 <div class="portfolio__block">
                 <h2 class="portfolio__company">Inspiration has no Borders</h2>
@@ -184,11 +209,15 @@
                     <div class="thubm__container">
                         <p class="thubm__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p>
                     </div>
-                <img 
-                srcset="./images/portfolio-img-3-1.jpeg    1x, ./images/portfolio-img-3-1-@2.jpeg 2x" 
-                class="portfolio-img" 
-                src="./images/portfolio-img-3-1.jpeg" 
-                alt="Дизайн Издание Лимитд Эдишн" />
+                <picture class="project-link__card-img">
+                    <source srcset="./images/limited-450.jpg 1x,
+                                    ./images/limited-900.jpg 2x" media="(max-width: 767px)" />
+                    <source srcset="./images/limited-354.jpg 1x,
+                                    ./images/limited-708.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)" />
+                    <source srcset="./images/limited-370.jpg 1x,
+                                    ./images/limited-740.jpg 2x" media="(min-width: 1200px)" />
+                    <img src="./images/limited-370.jpg" alt="Відкрита книга" />
+                </picture>
                 </div>
                 <div class="portfolio__block">
                 <h2 class="portfolio__company">Издание Limited Edition</h2>
@@ -202,11 +231,15 @@
                     <div class="thubm__container">
                         <p class="thubm__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p>
                     </div>
-                <img 
-                srcset="./images/portfolio-img-3-2.jpeg    1x, ./images/portfolio-img-3-2-@2.jpeg 2x" 
-                class="portfolio-img" 
-                src="./images/portfolio-img-3-2.jpeg" 
-                alt="Маркетинг Проект ЛЭБ" />
+                <picture class="project-link__card-img">
+                    <source srcset="./images/lab-450.jpg 1x, 
+                                    ./images/lab-900.jpg 2x" media="(max-width: 767px)" />
+                    <source srcset="./images/lab-354.jpg 1x, 
+                                    ./images/lab-708.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)" />
+                    <source srcset="./images/lab-370.jpg 1x, 
+                                    ./images/lab-740.jpg 2x" media="(min-width: 1200px)" />
+                    <img src="./images/lab-370.jpg" alt="Бірка із картону" />
+                </picture>
                 </div>
                 <div class="portfolio__block">
                 <h2 class="portfolio__company">Проект LAB</h2>
@@ -220,11 +253,15 @@
                     <div class="thubm__container">
                         <p class="thubm__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p>
                     </div>
-                <img 
-                srcset="./images/portfolio-img-3-3.jpeg    1x, ./images/portfolio-img-3-3-@2.jpeg 2x" 
-                class="portfolio-img" 
-                src="./images/portfolio-img-3-3.jpeg" 
-                alt="Приложение Гроуин Бизнес" />
+                <picture class="project-link__card-img">
+                    <source srcset="./images/growingbusiness-450.jpg 1x,
+                                    ./images/growingbusiness-900.jpg 2x" media="(max-width: 767px)" />
+                    <source srcset="./images/growingbusiness-354.jpg 1x,
+                                    ./images/growingbusiness-708.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)" />
+                    <source srcset="./images/growingbusiness-370.jpg 1x,
+                                    ./images/growingbusiness-740.jpg 2x" media="(min-width: 1200px)" />
+                    <img src="./images/growingbusiness-370.jpg" alt="Ноутбук, на якому відкритий додаток" />
+                </picture>
                 </div>
                 <div class="portfolio__block">
                 <h2 class="portfolio__company">Growing Business</h2>
