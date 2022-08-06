@@ -94,7 +94,7 @@
 
 /* footer svg link */
 .social {
-
+    
     @media screen and (min-width: 768px) and (max-width: 1190px) {
         width: 354px;
         margin-bottom: 0;
@@ -114,7 +114,6 @@
 
     color: var(--footer-title-text-color);
 
-    margin-top: 60px;
     margin-bottom: 20px;
 
     @media screen and (min-width: 1200px) {
@@ -181,7 +180,12 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
+    @media screen and (min-width: 480px) {
+        margin-top: 60px;
+    }
+
     @media screen and (min-width: 1200px) {
+        margin-top: 0;
         text-align: start;
     }
 }

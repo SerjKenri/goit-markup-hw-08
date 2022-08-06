@@ -400,7 +400,6 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: var(--footer-title-text-color);
-  margin-top: 60px;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px) {
@@ -460,8 +459,14 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+@media screen and (min-width: 480px) {
+  .footer__title {
+    margin-top: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__title {
+    margin-top: 0;
     text-align: start;
   }
 }
@@ -657,7 +662,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0;
-  margin-top: 20%;
+  margin-top: 302px;
   margin-bottom: 10%;
 }
 
@@ -769,6 +774,11 @@ body {
   color: var(--title-text-color);
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+  }
+}
 
 .hero__button {
   font-weight: 700;
@@ -828,14 +838,14 @@ body {
   .benef__item {
     flex-basis: calc(50% - 30px);
     margin-left: 30px;
-    margin-top: var(--gap-h);
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .benef__item {
     flex-basis: calc(25% - 30px);
     margin-left: 30px;
-    margin-top: var(--gap-h);
+    margin-top: 30px;
   }
 }
 
@@ -869,6 +879,9 @@ body {
   background-color: var(--background-team-sec);
 }
 
+.work {
+  padding-top: 0;
+}
 @media screen and (max-width: 1199px) {
   .work {
     display: none;
@@ -938,6 +951,7 @@ body {
 }
 
 .team__item {
+  background-color: var(--title-text-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -1013,7 +1027,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 
 .team__meta + .team__meta {
@@ -1419,6 +1433,8 @@ body {
 }
 
 .portfolio__item {
+  display: flex;
+  flex-direction: column;
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100vw - 30px);
@@ -1449,7 +1465,10 @@ body {
 }
 
 .portfolio__link {
-  display: block;
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1467,6 +1486,7 @@ body {
 }
 
 .portfolio__block {
+  flex-grow: 1;
   padding: 20px 24px;
   border-left: 1px solid var(--portfolio-border);
   border-right: 1px solid var(--portfolio-border);
