@@ -61,6 +61,7 @@ position: fixed;
     padding: 32px;
     background-color: var(--mobile-background-color);
     z-index: 999;
+    overflow-y: scroll;
 
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
@@ -151,21 +152,15 @@ position: fixed;
     margin-top: auto;
 }
 
-.mobile__social-item {
+.mobile__social-item--border {
+    &::after {
 
-
-    &:not(:last-child) {
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-    padding: 0px 10px 0px 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        content: '';
+        margin-right: 10px;
+        margin-left: 10px;
     }
-    &:last-child {
-        padding-left: 10px;
-    }
-
-    &:first-child {
-        padding-left: 0;
-    }
-
+    
 }
 
 .mobile__social--link {
